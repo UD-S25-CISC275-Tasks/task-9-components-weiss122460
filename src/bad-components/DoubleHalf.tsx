@@ -11,12 +11,12 @@ export function DoubleHalf(): React.JSX.Element {
                 The current value is: <span>{value}</span>
             </div>
             <Button
-                onClick={() => setValue((prev) => prev * 2)}
+                onClick={() => { setValue((prev) => prev * 2); }}
             >
                 Double
             </Button>
             <Button
-                onClick={() => setValue((prev) => prev / 2)}
+                onClick={() => { setValue((prev) => prev / 2); }}
             >
                 Halve
             </Button>
